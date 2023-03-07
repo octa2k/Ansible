@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: Package installation
+    dnf:
+      name:
+        - python3
+        - puthon-pip
+      state: latest
