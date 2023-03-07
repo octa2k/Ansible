@@ -1,7 +1,10 @@
 ---
 - hosts: all
+  gather_facts: yes
+  become: yes
+  
   tasks:
-  - name: Package installation
+    - name: Package installation
     dnf:
       name:
         - python3
